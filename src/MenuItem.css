@@ -1,0 +1,52 @@
+.MenuItem {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-bottom: 1.5px solid rgb(198, 198, 198);
+    padding-bottom: 1rem;
+}
+
+.MenuItem-info h3, .MenuItem-info p{
+    margin: .3rem 0
+}
+
+.MenuItem-description {
+    font-style: italic;
+}
+
+.MenuItem-price {
+    font-size: 1.2rem;
+    color: rgb(172, 86, 25);
+    font-weight: bold;
+}
+
+.MenuItem-amountInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MenuItem-amountInfo div, .MenuItem-amountInfo button {
+    margin: .3rem 0
+}
+
+.MenuItem-amountInfo input {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.MenuItem-amountInfo-input {
+    display: flex;
+    align-items: center;
+    height: 25px
+}
+
+.MenuItem-amountInfo button {
+    color: white;
+    background-color: rgb(140, 44, 9);
+    padding: .2rem 0;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+}
