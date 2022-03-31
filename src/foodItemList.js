@@ -2,22 +2,26 @@ export default [
     {
         title: "Sushi",
         description: "Finest fish and veggies",
-        price: "22.99"
+        price: 2299,
+        id: 1
     },
     {
         title: "Schnitzel",
         description: "A German specialty!",
-        price: "16.50"
+        price: 1650,
+        id: 2
     },
     {
         title: "Barbecue Burger",
         description: "American, raw, and meaty",
-        price: "12.99"
+        price: 1299,
+        id: 3
     },
     {
         title: "Green Bowl",
         description: "Healthy and green!",
-        price: "18.99"
+        price: 1899,
+        id: 4
     }
     
 ]

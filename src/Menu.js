@@ -13,6 +13,7 @@ export default function Menu(props) {
                 title={item.title}
                 description={item.description}
                 price={item.price}
+                key={item.id}
                 />
             ))}
         </div>

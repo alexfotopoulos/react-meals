@@ -2,3 +2,7 @@
     background-color: rgb(57,57,57);
     height: 100vh;
 }
+
+button:hover {
+    transform: scale(1.1);
+}
