@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './MenuItem.css';
 
-export default function MenuItem() {
+export default function MenuItem(props) {
+    let numOfItems = useRef();
+
+    function handleClick() {
+        numOfItems = numOfItems.current.value;
+        let itemArray = [];
+        for (let i = 0; i < numOfItems; i++) {
+            itemArray.push('Sushi')
+        }
+        props.handleItemSelection(itemArray);
+        props.incrementTotal((22.99 * itemArray.length))
+        console.log(numOfItems.current)
+    }
     return (
         <div className='MenuItem'>
             <div className='MenuItem-info'>
@@ -12,9 +24,9 @@ export default function MenuItem() {
             <div className='MenuItem-amountInfo'>
                 <div className='MenuItem-amountInfo-input'>
                     <h3>Amount</h3>
-                    <input type="number" />
+                    <input ref={numOfItems} name='itemCount' type="number"/>
                 </div>
-                <button>+Add</button>
+                <button onClick={handleClick}>+Add</button>
             </div>
         </div>
     )

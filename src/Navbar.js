@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <nav className='Navbar'>
         <div>
@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className='Navbar-cartInfo'>
             <i className="fa-solid fa-cart-shopping Navbar-cartInfo-content"></i>
             <span className='Navbar-cartInfo-content'>Your Cart</span>
-            <div className='Navbar-cartInfo-content Navbar-itemTotals'>0</div>
+            <div className='Navbar-cartInfo-content Navbar-itemTotals'>{props.items.length}</div>
         </div>
     </nav>
   )
