@@ -9,8 +9,8 @@ export default function ShoppingCartModal(props) {
         for (let i = 0; i < foodItemList.length; i++) {
             if (foodItemList[i].title === title) {
                 return foodItemList[i].price
-            }
-        }
+            };
+        };
     };
 
     let ModalListItemElements = [];
@@ -26,12 +26,17 @@ export default function ShoppingCartModal(props) {
                 handleItemDeletion={props.handleItemDeletion}
                 key={Math.random()}
             />
-        )
-    }
+        );
+    };
 
     function handleClick() {
         props.clearModal();
     }
+
+    function handleOrder() {
+        props.clearModal();
+        console.log("ORDERING...");
+    };
 
     return (
         <div>
@@ -46,7 +51,7 @@ export default function ShoppingCartModal(props) {
                         </div>
                         <div className='ShoppingCartModal-totalSection-buttons'>
                             <button onClick={handleClick}>close</button>
-                            <button>Order</button>
+                            <button onClick={handleOrder}>Order</button>
                         </div>
                     </div>
                 </div>

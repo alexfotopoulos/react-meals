@@ -48,6 +48,7 @@ function App() {
 
   return (
     <div className="App">
+      <img id='backgroundImage' src="https://github.com/academind/react-complete-guide-code/blob/11-practice-food-order-app/extra-files/meals.jpg?raw=true" alt="" />
       <Navbar selectedItems={selectedItems} total={total} incrementTotal={incrementTotal} decrementTotal={decrementTotal} handleItemSelection={handleItemSelection} handleItemDeletion={handleItemDeletion} />
       <Summary />
       <Menu handleItemSelection={handleItemSelection} incrementTotal={incrementTotal} />

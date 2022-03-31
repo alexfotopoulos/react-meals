@@ -23,5 +23,4 @@ export default [
         price: 1899,
         id: 4
     }
-    
-]
+];

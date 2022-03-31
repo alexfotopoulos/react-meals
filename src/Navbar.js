@@ -18,9 +18,9 @@ export default function Navbar(props) {
     let total = 0;
     for (let item of props.selectedItems) {
       total += item.amount;
-    }
+    };
     return total;
-  }
+  };
 
   return (
     <div>

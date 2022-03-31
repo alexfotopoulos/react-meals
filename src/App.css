@@ -1,6 +1,8 @@
-.App {
-    background-color: rgb(57,57,57);
-    height: 100vh;
+#backgroundImage {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-13rem);
 }
 
 button:hover {
