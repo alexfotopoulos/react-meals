@@ -8,23 +8,23 @@ export default function MenuItem(props) {
         numOfItems = numOfItems.current.value;
         let itemArray = [];
         for (let i = 0; i < numOfItems; i++) {
-            itemArray.push('Sushi')
+            itemArray.push(props.title)
         }
         props.handleItemSelection(itemArray);
-        props.incrementTotal((22.99 * itemArray.length))
+        props.incrementTotal((props.price * itemArray.length))
         console.log(numOfItems.current)
     }
     return (
         <div className='MenuItem'>
             <div className='MenuItem-info'>
-                <h3>Sushi</h3>
-                <p className='MenuItem-description'>Finest fish and veggies</p>
-                <p className='MenuItem-price'><span>$</span>22.99</p>
+                <h3>{props.title}</h3>
+                <p className='MenuItem-description'>{props.description}</p>
+                <p className='MenuItem-price'><span>$</span>{props.price}</p>
             </div>
             <div className='MenuItem-amountInfo'>
                 <div className='MenuItem-amountInfo-input'>
                     <h3>Amount</h3>
-                    <input ref={numOfItems} name='itemCount' type="number"/>
+                    <input ref={numOfItems} name='itemCount' type="number" min={0}/>
                 </div>
                 <button onClick={handleClick}>+Add</button>
             </div>
