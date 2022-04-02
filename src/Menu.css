@@ -1,5 +1,5 @@
 .Menu {
-    width: 1000px;
+    max-width: 1000px;
     background-color: white;
     margin: auto;
     border-radius: 1rem;

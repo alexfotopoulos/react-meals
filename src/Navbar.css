@@ -10,13 +10,14 @@
     margin-left: 7rem;
     font-size: 2rem;
     font-weight: bold;
+    padding-top: 1rem;
 }
 
 .Navbar-cartInfo {
     background-color: rgba(0,0,0,0.5);
     display: flex;
     margin-right: 7rem;
-    padding: .7rem 2.5rem;
+    padding: .5rem 2.5rem;
     align-items: center;
     border-radius: 2rem;
 }
@@ -29,7 +30,7 @@
 
 .Navbar-itemTotals {
     background-color: rgb(210, 78, 30);
-    padding: .2rem 1rem;
+    padding: 0rem 1rem;
     border-radius: 1rem;
 }
 

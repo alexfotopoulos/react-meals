@@ -19,7 +19,7 @@ export default function MenuItem(props) {
             <div className='MenuItem-amountInfo'>
                 <div className='MenuItem-amountInfo-input'>
                     <h3>Amount</h3>
-                    <input ref={numOfItems} name='itemCount' type="number" min={1}/>
+                    <input ref={numOfItems} name='itemCount' type="number" min={1} max={5} defaultValue={1}/>
                 </div>
                 <button onClick={handleClick}>+Add</button>
             </div>

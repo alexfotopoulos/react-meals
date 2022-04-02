@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(150,51,40);
+    margin-bottom: 1rem;
 }
 
 .ModalListItem-info h3 {
@@ -16,6 +17,7 @@
 
 .ModalListItem-info-priceAndNum p {
     margin-right: 1rem;
+    padding-top: 1rem;
 }
 
 .ModalListItem-info-priceAndNum div {
@@ -28,6 +30,7 @@
 .ModalListItem-price {
     color: rgb(150,51,40);
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .ModalListItem-buttons button{

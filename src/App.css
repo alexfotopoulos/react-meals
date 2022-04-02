@@ -1,3 +1,7 @@
+.App {
+    padding-bottom: 3rem;
+}
+
 #backgroundImage {
     width: 100%;
     position: absolute;
