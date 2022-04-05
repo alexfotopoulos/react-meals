@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ShoppingCartModal from './ShoppingCartModal';
+import ShoppingCartModal from './modal/ShoppingCartModal';
 import './Navbar.css';
 
 

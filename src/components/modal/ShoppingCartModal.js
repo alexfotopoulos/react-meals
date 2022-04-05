@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './ShoppingCartModal.css';
 import ModalListItem from './ModalListItem';
-import foodItemList from './foodItemList';
+import foodItemList from '../menu/foodItemList';
+import OrderForm from './OrderForm';
 
 export default function ShoppingCartModal(props) {
+    const [ordering, setOrdering] = useState(false);
 
     function getPrice(title) {
         for (let i = 0; i < foodItemList.length; i++) {
@@ -34,8 +36,7 @@ export default function ShoppingCartModal(props) {
     }
 
     function handleOrder() {
-        props.clearModal();
-        console.log("ORDERING...");
+        setOrdering(true);
     };
 
     return (
@@ -55,6 +56,7 @@ export default function ShoppingCartModal(props) {
                         </div>
                     </div>
                 </div>
+                {ordering && <OrderForm />}
             </div>
         </div>
     );

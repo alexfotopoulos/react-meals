@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import Navbar from './Navbar';
-import Summary from './Summary';
-import Menu from './Menu';
+import Navbar from './components/Navbar';
+import Summary from './components/Summary';
+import Menu from './components/menu/Menu';
 
 function App() {
   const [total, setTotal] = useState(0);
