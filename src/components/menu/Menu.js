@@ -18,7 +18,6 @@ export default function Menu(props) {
                 });
             };
             setMeals(mealData);
-            console.log(mealData)
         }
         getData();
     }, [])

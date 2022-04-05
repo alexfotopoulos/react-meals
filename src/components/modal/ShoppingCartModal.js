@@ -33,6 +33,7 @@ export default function ShoppingCartModal(props) {
 
     function handleClick() {
         props.clearModal();
+        setOrdering(false);
     }
 
     function handleOrder() {
@@ -56,7 +57,7 @@ export default function ShoppingCartModal(props) {
                         </div>
                     </div>
                 </div>
-                {ordering && <OrderForm />}
+                {ordering && <OrderForm setTotal={props.setTotal} selectedItems={props.selectedItems} setSelectedItems={props.setSelectedItems} clearModal={props.clearModal} setOrdering={setOrdering}/>}
             </div>
         </div>
     );

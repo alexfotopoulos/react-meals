@@ -27,6 +27,8 @@ export default function Navbar(props) {
       {modal && <ShoppingCartModal
         clearModal={clearModal}
         selectedItems={props.selectedItems}
+        setSelectedItems={props.setSelectedItems}
+        setTotal={props.setTotal}
         total={props.total}
         incrementTotal={props.incrementTotal}
         decrementTotal={props.decrementTotal}
